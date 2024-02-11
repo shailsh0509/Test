@@ -40,7 +40,13 @@ void solve()
     vi arr(n+1,0);
     rep(i,1,n+1){
         cin>>arr[i];
-        arr[i]+=arr[i-1];
+         arr[i]+=arr[i-1];
+         int sum1=0;
+         if(sum1<0){
+            return ;
+         }else{
+            continue;
+         }
     }
     vi root;
     for(int i=1;i*i<=n;i++){
